@@ -55,7 +55,7 @@ class Ui_MainWindow(object):
 
     def openFile(self):
         global videofilename
-        file = QtWidgets.QFileDialog.getOpenFileName(None,'Open File','c:\\','Video Files (*.mp4 *.webm *.avi *.mkv)')
+        file = QtWidgets.QFileDialog.getOpenFileName(None,'Open File','c:\\','Video Files (*.mp4 *.webm *.avi *.mkv *.flv)')
         videofilename = file[0]
         print('Opened:',videofilename)
         self.videoFile.setText(os.path.basename(videofilename))
